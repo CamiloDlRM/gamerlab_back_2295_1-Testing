@@ -10,10 +10,5 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   await app.init();
   
-  // Este `listen` no es necesario para funciones serverless, pero puedes dejarlo para propósitos locales
-  const port = process.env.PORT ?? 3000;
-  server.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
-  });
 }
 bootstrap();
