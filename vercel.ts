@@ -1,6 +1,5 @@
-import { Handler } from '@netlify/functions';  // Funciones serverless en Vercel usan este tipo de handler
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { AppModule } from './src/app.module';
 import { ExpressAdapter } from '@nestjs/platform-express';
 import * as express from 'express';
 
@@ -13,4 +12,4 @@ const bootstrap = async () => {
 
 bootstrap();
 
-export const handler: Handler = server;
+export default server;
