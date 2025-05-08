@@ -5,8 +5,9 @@
     "strict": true,
     "outDir": "dist",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "vercel.ts"],
   "exclude": ["node_modules", "dist"]
 }
