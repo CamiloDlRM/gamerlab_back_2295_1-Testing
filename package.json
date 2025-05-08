@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
+    "vercel-build": "tsc",
     "test": "jest",
     "test:main": "echo \"No tests defined for main branch\""
   },
@@ -16,11 +17,12 @@
     "@types/supertest": "^2.0.12"
   },
   "dependencies": {
-  "@nestjs/common": "^11.0.0",
-  "@nestjs/core": "^11.0.0",
-  "@nestjs/typeorm": "^11.0.0",
-  "@nestjs/mapped-types": "^2.0.4",
-  "@nestjs/platform-express": "^11.0.0",
-  "pg": "^8.11.3"
-}
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "@nestjs/mapped-types": "^2.0.4",
+    "@nestjs/platform-express": "^11.0.0",
+    "pg": "^8.11.3",
+    "express": "^4.18.2"
+  }
 }
